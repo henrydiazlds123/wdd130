@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.seccion {
+  min-height: 600px;
+  overflow-y: scroll;
+}

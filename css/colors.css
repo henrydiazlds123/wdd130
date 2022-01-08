@@ -1,0 +1,22 @@
+.color {
+  height: 50px;
+  width: 50px;
+}
+.naranja {
+  background: var(--naranja);
+}
+.rojo {
+  background: var(--rojo);
+}
+.verde {
+  background: var(--verde);
+}
+.azul {
+  background: var(--azul);
+}
+.font {
+  background: var(--font);
+}
+#additional {
+  display: flex;
+}
