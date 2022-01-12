@@ -1,3 +1,11 @@
+:root {
+  --naranja: #ff9933;
+  --rojo: #ff3333;
+  --verde: #33ff99;
+  --azul: #3399ff;
+  --font: #363945;
+}
+
 .color {
   height: 50px;
   width: 50px;
