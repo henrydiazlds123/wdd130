@@ -6,3 +6,15 @@ html {
   min-height: 600px;
   overflow-y: scroll;
 }
+
+#logo .fakeimg {
+  background-image: url("../images/life.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 250px;
+}
+.side .me {
+  background-image: url("../images/henry.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+}

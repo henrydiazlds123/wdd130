@@ -1,73 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W2 Site Plan</title>
+<html lang="en-US">
 
-    <link rel="stylesheet" href="css/siteplan.css">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <title>Site Plan</title>
+
+    <link rel="stylesheet" href="css/siteplan.css"/>
+
+
 </head>
+
 <body>
-    <header>
-        <h1>Site Plan</h1>
-        <h2>Henry Diaz</h2>
+    <!-- Header -->
+    <header class="header">
+        <h1>My Site Plan</h1>
+        <p>Web Fundamentals - WDD 130</p>
     </header>
 
-    <nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <ul>
             <li><a href="#name">Site Name</a></li>
-            <li><a href="#purpose">Site Purpose with Goals</a></li>
+            <li><a href="#purpose">Purpose</a></li>
             <li><a href="#audience">Target Audience</a></li>
             <li><a href="#logo">Logo</a></li>
-            <li><a href="#scheme">Color Scheme</a></li>
+            <li><a href="#colors">Color Scheme</a></li>
             <li><a href="#typography">Typography</a></li>
-        </ul>
+        </ul>     
     </nav>
-        <section id="name" class="item">
-            <h3>Life Adventures</h3>
-            <p>The site name is the simply the name of the organizational site and your proposed domain for the site.</p>
-            <p>This is often driven by the brand or trademark and/or tied to the domain.</p>
-        </section>
-        <section id="purpose" class="item">
-            <h3>Site Purpose with Goals</h3>
-            <p>content</p>
-        </section>
-        <section id="audience" class="item">
-            <h3>Target Audience</h3>
-            <p>content</p>
-        </section>
-        <section id="logo" class="item">
-            <h3>Logo</h3>
-            <div>
-                <img src="./images/life.jpg" alt="Company Logo">
-            </div>            
-        </section>
-        <section id="scheme" class="item">
-            <h3>Color Scheme</h3>
-            <p>Primary Color</p>
-                <div class="color naranja"></div>
-            <p>Implies a friendly, fun time is ahead</p>
-            <p>Additional Colors</p>
-                <div id="additional">
-                    <div class="color azul"></div>
-                    <div class="color verde"></div>
-                    <div class="color rojo"></div>
-                </div>
-            <p>Background Color</p>
-            <p>Typeface Color</p>
-                <div class="font color"></div>
-        </section>
-        <section id="typography" class="item">
-            <h3>Typography</h3>
-            <p>content</p>
-        </section>
-    <main>
 
-    </main>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <aside class="side">
+            <h2>Henry Diaz</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg me">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            
+        </aside>
+        <main class="content">
+            <section id="name" class="item">
+                <article>
+                    <h2>SITE NAME</h2>
+                    <h5>Subtitle</h5>
+                    <div class="fakeimg me">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </article>
+            </section>
+            <br>
+            <section id="purpose" class="item">
+                <article>
+                    <h2>SITE PURPOSE & GOALS</h2>
+                    <h5>Subtitle</h5>
+                    <div class="fakeimg me">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </article>
+            </section>
+            <section id="audience" class="item">
+                <article>
+                    <h2>TARGET AUDIENCE</h2>
+                    <h5>Subtitle</h5>
+                    <div class="fakeimg me">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </article>
+            </section>
+            <section id="logo" class="item">
+                <article>
+                    <h2>LOGO</h2>
+                    <h5>Subtitle</h5>
+                    <div class="fakeimg me"></div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </article>
+            </section>
+            <section id="colors" class="item">
+                <article>
+                    <h2>COLOR SCHEME</h2>
+                    <h5>Subtitle</h5>
+                    <div class="fakeimg me">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <div class="additional">
+                        <div class="color verde">Color1</div><br>
+                        <div class="color azul">Color2</div><br>
+                        <div class="color rojo">Color3</div>
+                   </div>
+                </article>
+            </section>
+            <section id="typography" class="item">
+                <article>
+                    <h2>TYPOGRAPHY</h2>
+                    <h5>Subtitle</h5>
+                    <div class="fakeimg me">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </article>
+            </section>
+        </main>
+    </div>
 
-    <footer>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Footer</h2>
     </footer>
 </body>
+
 </html>
