@@ -1,0 +1,14 @@
+.footer {
+    background: red;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    
+    text-align: center;
+    
+}
+.footer div {
+    width: 25%;
+
+    
+}

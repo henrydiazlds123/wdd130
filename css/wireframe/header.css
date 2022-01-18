@@ -1,0 +1,33 @@
+nav, .logo {
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+li {
+    /*    border: 1px solid black;*/
+    background: grey;
+    border-radius: 5px;
+    padding: 6px 20px;
+    margin: 10px;
+
+}
+.header {
+    padding: 20px;
+}
