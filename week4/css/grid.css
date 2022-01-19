@@ -1,0 +1,27 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B" "D C";
+}
+
+.a {
+    grid-area: A;
+    margin-bottom: 30px;
+}
+
+.b {
+    grid-area: B;
+    margin-bottom: 30px;
+}
+
+.c {
+    grid-area: C;
+    margin-bottom: 30px;
+}
+
+.d {
+    grid-area: D;
+    margin-bottom: 30px;
+}
+
+

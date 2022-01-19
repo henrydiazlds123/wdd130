@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main {
+    background: var(--grey);
+}
+
+.site {
+    padding: 0 20px;
+}
+
+.info > p, figure {
+    margin-left: 80px;
+}
+
+.bottom > h2 {
+    text-align: center;
+}
+
+.bottom > p {
+    margin-left: 40px;
+}
