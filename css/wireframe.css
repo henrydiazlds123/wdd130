@@ -1,8 +1,8 @@
-/*@import "wireframe/banner.css";
+@import "wireframe/banner.css";
 @import "wireframe/gallery.css";
 @import "wireframe/footer.css";
 @import "wireframe/header.css";
-*/
+
 * {
     box-sizing: border-box;
     margin:0;
