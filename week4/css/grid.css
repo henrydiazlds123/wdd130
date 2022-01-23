@@ -4,24 +4,22 @@
     grid-template-areas: "A B" "D C";
 }
 
-.a {
+.content div:nth-child(1) {
     grid-area: A;
     margin-bottom: 30px;
 }
 
-.b {
+.content picture:nth-child(2) {
     grid-area: B;
     margin-bottom: 30px;
 }
 
-.c {
+.content div:nth-child(3) {
     grid-area: C;
     margin-bottom: 30px;
 }
 
-.d {
+.content picture:nth-child(4) {
     grid-area: D;
     margin-bottom: 30px;
 }
-
-

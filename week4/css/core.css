@@ -10,7 +10,7 @@ html {
 body {
     font-family: Arial;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .page {
@@ -22,18 +22,14 @@ body {
     background: var(--grey);
 }
 
-.site {
-    padding: 0 20px;
-}
-
-.info > p, figure {
+.content div:nth-child(odd) > p, figure {
     margin-left: 80px;
 }
 
-.bottom > h2 {
+article > h2 {
     text-align: center;
 }
 
-.bottom > p {
+article > p {
     margin-left: 40px;
 }
