@@ -1,30 +1,32 @@
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 h2 {
-  font-size: 1.875em;
+    font-size: 1.875em;
 }
 
 p {
-  font-size: 0.875em;
+    font-size: 0.875em;
 }
 
 h1,
 h2 {
-  color: var(--naranja);
+    color: $naranja;
 }
+
 h2 {
-  margin: 20px;
+    margin: 20px;
 }
+
 .site-header td:nth-child(n + 4) {
-  background: var(--azul);
-  color: white;
+    background: $azul;
+    color: white;
 }
 
 .navigation td:nth-child(n + 4) {
-  background: var(--black);
-  color: white;
+    background: $black;
+    color: white;
 }
 
 .heading1 td:nth-child(n + 4),
@@ -32,37 +34,37 @@ h2 {
 .heading2 td:nth-child(n + 4),
 .heading5 td:nth-child(n + 4),
 .footer td:nth-child(n + 4) {
-  color: var(--naranja);
+    color: $naranja;
 }
 
 .text td:nth-child(n + 4) {
-  color: var(--black);
+    color: $black;
 }
 
 .site-header td:last-child {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .navigation td:last-child {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .heading1 td:last-child {
-  font-size: 35px;
+    font-size: 35px;
 }
 
 .heading2 td:last-child {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .heading5 td:last-child {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .text td:last-child {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .footer td:last-child {
-  font-size: 20px;
+    font-size: 20px;
 }
