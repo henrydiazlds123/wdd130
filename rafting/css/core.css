@@ -36,7 +36,7 @@ article > p {
   margin-left: 40px;
 }
 .content img {
-   background-size: cover;
+  background-size: cover;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -44,5 +44,4 @@ article > p {
   border: 10px solid #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
 }
