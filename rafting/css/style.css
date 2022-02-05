@@ -2,7 +2,10 @@
   --primary-color: #ff9933;
   --bg-color: #f5f5f5;
 }
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+=======
+>>>>>>> 1b3cc6f19601ed3682e8950d0dcb8130d5781e08
 
 * {
   /* -webkit-box-sizing: border-box; */
@@ -24,7 +27,11 @@ body {
 header {
   /* display: -ms-grid; */
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: auto auto 1fr;
+=======
+  justify-items: center;
+>>>>>>> 1b3cc6f19601ed3682e8950d0dcb8130d5781e08
 }
 
 main {
@@ -36,9 +43,13 @@ article > h2 {
 }
 
 article > p {
+<<<<<<< HEAD
   /* margin-left: 40px; */
   margin: auto;
   width: 80%;
+=======
+  margin-left: 40px;
+>>>>>>> 1b3cc6f19601ed3682e8950d0dcb8130d5781e08
 }
 
 h2 {
@@ -112,7 +123,12 @@ p {
 
 nav ul {
   /* display: -ms-grid; */
+<<<<<<< HEAD
   display: flex;
+=======
+  display: grid;
+  justify-items: center;
+>>>>>>> 1b3cc6f19601ed3682e8950d0dcb8130d5781e08
   list-style: none;
   justify-content: space-around;
   padding: 0;
@@ -134,13 +150,20 @@ li {
 footer {
   /* display: -ms-grid; */
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: auto 1fr auto;
   align-items: center;
+=======
+  justify-items: center;
+>>>>>>> 1b3cc6f19601ed3682e8950d0dcb8130d5781e08
   height: 100px;
   padding: 10px;
   margin: 10px 0;
   background: var(--primary-color);
+<<<<<<< HEAD
 }
 .social {
   grid-column: 3;
+=======
+>>>>>>> 1b3cc6f19601ed3682e8950d0dcb8130d5781e08
 }
