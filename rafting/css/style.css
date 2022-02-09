@@ -39,6 +39,9 @@ Accessibility
   margin: 0;
   padding: 0;
 }
+.banner-box img {
+  padding-top: 1rem;
+}
 
 html {
   scroll-behavior: smooth;
@@ -92,9 +95,14 @@ article > p {
   background: #333;
   color: white;
 }
+.banner-caption {
+  display: grid;
+  justify-content: center;
+}
 
 h1 {
   font-size: 2.5em;
+  padding: 1rem 0;
 }
 
 h2 {
