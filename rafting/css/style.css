@@ -37,6 +37,7 @@ Accessibility
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -44,11 +45,13 @@ html {
 }
 
 body {
-  font-family: Arial;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
   line-height: 1.4rem;
   margin: 0;
   padding: 0 20px;
+  font-size: 16px;
 }
+
 
 .page {
   max-width: 1024px;
@@ -99,7 +102,8 @@ h2 {
 }
 
 p {
-  font-size: 0.875em;
+  font-size: 1.2em;
+  padding-right: 1rem;
 }
 
 h1,
@@ -198,15 +202,15 @@ h2 {
 }
 
 header {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
+  display: -ms-flex;
+  display: flex;
+  justify-items: start;
 }
 
 nav ul {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
+  display: -ms-flex;
+  display: flex;
+  justify-items: start;
   list-style: none;
   padding: 0;
 }
@@ -228,12 +232,19 @@ li {
 }
 
 footer {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  height: 40px;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 40px; */
   padding: 10px;
   margin: 10px 0;
   background: #ff9933;
+  color: #f1f1f1;
+}
+
+picture img {
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(5px 5px 5px #666666);
 }
 /*# sourceMappingURL=style.css.map */
