@@ -15,7 +15,6 @@ html {
 body {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   line-height: 1.4rem;
-  margin: 0;
   padding: 0 20px;
   font-size: 16px;
 }
@@ -102,33 +101,58 @@ h2 {
 }
 
 header {
+  width: 100%;
   display: -ms-flex;
   display: flex;
-  justify-items: start;
+justify-items: center;
+justify-content: space-between;
+background-color: #ff9933;
+
 }
 
-nav ul {
+.navigation {
   display: -ms-flex;
   display: flex;
   justify-items: start;
   list-style: none;
   padding: 0;
+  
 }
 
-.link {
+.navigation a{
+  display: block;
+  padding: .75em;
+}
+
+.navigation a:hover {	
+  color: #000; 
+  background-color: #ddd;	
+  font-weight: 700;
+}
+
+.link, .cta a {
   text-decoration: none;
 }
 
-li {
-  /*    border: 1px solid black;*/
-  /* background: grey;
-    border-radius: 5px; */
-  padding: 6px 20px;
-  margin: 10px;
+.navigation li {
+     flex: 1 1 100%;
 }
 
 .banner-box {
   margin-bottom: 30px;
+  position: relative;
+}
+.cta {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+   
+}
+.cta a {
+  color:#ff9933
 }
 
 footer {
