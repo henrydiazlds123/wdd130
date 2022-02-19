@@ -43,7 +43,7 @@ article > p {
 
 h1 {
   font-size: 2.5em;
-  padding: 1rem 0;
+  padding: 1em;
 }
 
 h2 {
@@ -125,6 +125,7 @@ header {
   padding: .75em;
   color: white;
   margin-top: 5px;
+  font-weight: 700;
 }
 
 .navigation a:hover {	
@@ -179,7 +180,7 @@ footer {
   padding: 10px;
   margin: 10px 0;
   background: #ff9933;
-  color: #f1f1f1;
+  color: #000;
 }
 
 picture img {
