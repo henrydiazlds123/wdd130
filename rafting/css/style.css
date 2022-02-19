@@ -72,6 +72,8 @@ h2 {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "A B" "D C";
+  justify-items: stretch;
+  
 }
 .content div, .content picture{
   margin-bottom: 30px;
@@ -101,7 +103,11 @@ h2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: D;
+  
 
+}
+picture:nth-child(4) img {
+    width: 80%;
 }
 
 header {
@@ -186,7 +192,7 @@ footer {
 picture img {
   -webkit-filter: drop-shadow(5px 5px 5px #666666);
         filter: drop-shadow(5px 5px 5px #666666);
-  width: 100%;
+
 }
 .social img{
   width: 30px;
