@@ -1,6 +1,7 @@
 
 :root {
   --max-width: 1024px;
+  --grey: #F0F2F5;
   --orange: #ff9933;
   --blue: rgb(51, 153, 255);
 }
@@ -21,7 +22,7 @@ body {
   line-height: 1.4rem;
   /* padding: 0 20px; */
   font-size: 16px;
-  background-color: #E5F2FF;
+  background-color: var(--grey);
 }
 
 
@@ -32,7 +33,9 @@ article > h2 {
 article > p {
   margin-left: 40px;
 }
-
+h1, .brand {
+  font-family: 'Sahitya', serif;
+  font-weight: 700;}
 
 h1 {
   font-size: 4em;
@@ -41,6 +44,7 @@ h1 {
                0px 10px 10px rgba(51,153,255,0.15),
                0px 20px 2px rgba(51,153,255,0.1),
                0px 30px 25px rgba(51,153,255,0.1);
+
 }
 
 h2 {
@@ -75,7 +79,7 @@ h2 {
 .page {
   border-radius: 8px;
   max-width: var(--max-width);
-  margin: 80px auto 15px;
+  margin: 110px auto 15px;
   background-color: white;
   padding: 1em;
 }
@@ -100,6 +104,32 @@ header .container{
   justify-content: space-between;
 }
 
+.logo {
+  width: 60px;
+  height: 80px;
+  position: relative;
+  margin: 5px;
+}
+
+.egg {
+margin-left: 30px;
+width: 60px;
+height: 80px;
+margin-left: 14px;
+background: white;
+display: block;
+ transform: rotate(50deg);
+border-radius: 50% 60% 50% 50% / 70% 70% 40% 40%;}
+
+
+.brand {
+  position: absolute;
+  top: 30px;
+  left: 9px;
+  color: var(--orange);
+  font-size:40px;
+}
+
 nav {
   width: 30%;
 }
@@ -120,15 +150,16 @@ nav ul.navigation li {
 
 nav ul.navigation a{
   display: block;
-  padding: .65em;
+  padding: 8px 14px;
   color: white;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   transition-duration: 0.4s;
 }
 
-nav ul.navigation a:hover {	
-  color: var(--blue); 
-  background-color: white;	
+nav ul.navigation a:hover{	
+  background-color: var(--grey); 
+  color: var(--blue);
   border-radius: 8px;
 }
 
@@ -138,8 +169,14 @@ a.link {
 }
 
 nav ul li.active a{
-  background-color: white;
-  color: var(--blue);
+  background-color: var(--blue);
+  color: white;
+  border-radius: 4px;
+}
+nav ul li.active a:hover{
+  background-color: var(--blue);
+  color: white;
+  border-radius: 4px;
 }
 
 picture img {
