@@ -3,7 +3,7 @@
   --max-width: 1024px;
   --grey: #F0F2F5;
   --orange: #ff9933;
-  --blue: rgb(51, 153, 255);
+  --blue: #3399ff;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -80,7 +80,9 @@ h2 {
   border-radius: 8px;
   max-width: var(--max-width);
   margin: 110px auto 15px;
-  background-color: red;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #CCE6FF;
 }
 .sticky {
   position: fixed;
@@ -304,8 +306,6 @@ footer .container {
   color: #000;
   
 }
-
-
 
 
 .social img{
