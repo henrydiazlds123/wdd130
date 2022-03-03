@@ -126,9 +126,6 @@ border-radius: 50% 60% 50% 50% / 70% 70% 40% 40%;}
   color: var(--orange);
   font-size:40px;
 }
-.brand a {
-  color: var(--orange);
-}
 
 nav {
   width: 30%;
@@ -165,7 +162,7 @@ nav ul.navigation a:hover{
   border-radius: 8px;
 }
 
-a {
+a.link {
   text-decoration: none;
 }
 
@@ -294,14 +291,12 @@ picture:nth-child(4) img {
 }
 
 footer {
-  /* margin: 10px 0; */
   height: 100px;
   background: var(--orange);
   
 }
 
 footer .container {
-  padding: 1rem;
   color: #000;
   
 }
