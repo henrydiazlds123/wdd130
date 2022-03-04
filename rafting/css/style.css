@@ -33,20 +33,23 @@ article > p {
   margin-left: 40px;
 }
 h1, .brand {
+  color: var(--blue);
   font-family: 'Sahitya', serif;
   font-weight: 700;}
 
 h1 {
   font-size: 4em;
   padding: .75em;
-  text-shadow: 0px 3px 0px var(--blue),
+  /* text-shadow: 0px 3px 0px var(--blue),
                0px 10px 10px rgba(51,153,255,0.15),
-               0px 30px 25px rgba(51,153,255,0.1);
+               0px 30px 25px rgba(51,153,255,0.1); */
 
 }
 
 h2 {
   font-size: 1.875em;
+  color: var(--blue);
+  margin: 20px;
 }
 
 p {
@@ -54,15 +57,8 @@ p {
   padding-right: 1rem;
 }
 
-h1 {
-  color: var(--orange)
-}
-h2 {
-  color: var(--blue);
-}
-
-h2 {
-  margin: 20px;
+.brand {
+  color: var(--orange);
 }
 
 .container {
