@@ -460,3 +460,6 @@ figure.pushup:hover figcaption{
 .intro h2{
   text-align: center;
 }
+iframe {
+  border:none; 
+}
