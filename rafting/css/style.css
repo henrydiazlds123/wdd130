@@ -342,7 +342,7 @@ input[type=submit]:hover {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-h2.address {
+.information h2 {
   margin: 0 0 10px;
 }
 .gallery {
