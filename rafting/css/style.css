@@ -33,7 +33,7 @@ article > p {
   margin-left: 40px;
 }
 h1, .brand {
-  color: var(--blue);
+  /* color: var(--blue); */
   font-family: 'Sahitya', serif;
   font-weight: 700;}
 
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
   font-size: 1.875em;
-  color: var(--blue);
+  /* color: var(--blue); */
   margin: 20px;
 }
 
