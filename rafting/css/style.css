@@ -20,7 +20,6 @@ html {
 body {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   line-height: 1.4rem;
-  /* padding: 0 20px; */
   font-size: 16px;
   background-color: var(--grey);
 }
@@ -42,7 +41,6 @@ h1 {
   padding: .75em;
   text-shadow: 0px 3px 0px var(--blue),
                0px 10px 10px rgba(51,153,255,0.15),
-               0px 20px 2px rgba(51,153,255,0.1),
                0px 30px 25px rgba(51,153,255,0.1);
 
 }
@@ -144,9 +142,7 @@ nav ul.navigation {
 }
 
 nav ul.navigation li {
-  /* display: block; */
   margin-left: 10px;
-  /* padding: 30px; */
 }
 
 
@@ -187,7 +183,7 @@ box-shadow:
                 0 16px 16px rgba(0, 0, 0, .1), 
                 0 32px 32px rgba(0, 0, 0, .15), 
                 0 64px 64px rgba(0, 0, 0, .15);
-        border-radius: 10px;
+        border-radius: 6px;
 }
 
 .content img {
@@ -214,13 +210,13 @@ box-shadow:
   position: absolute;
   top: 240px;
   left: 200px;
-  background: white;
+  background: var(--blue);
   padding: 10px;
   border-radius: 8px;
-  border: 2px solid var(--orange);
+  border: 1px solid white;
   font-size: 1.2rem;
   transition-duration: 0.4s;
-  color: var(--blue);
+  color: white;
   
 }
 
@@ -314,4 +310,43 @@ footer .container {
   filter:  brightness(0) invert(1);
 }
 
+/* Gooogle Map */
+.mapouter{text-align:right;height:500px;width:500px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;  border-radius:4px;}
 
+/* Contact form */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #61cc8e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+h2.address {
+  margin: 0 0 10px;
+}
