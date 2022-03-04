@@ -215,7 +215,7 @@ box-shadow:
 }
 
 .cta:hover {
-  background-color: var(--orange);
+  background-color: var(--blue);
   color: white;
   cursor:pointer;
 }
