@@ -10,8 +10,9 @@
   </head>
 
   <body>
+    <div class="header">
     <!-- Header -->
-    <header class="header">
+    <header>
       <h1>Final Project - Site Plan</h1>
       <p>Web Fundamentals - WDD 130</p>
     </header>
@@ -29,29 +30,31 @@
         <li><a href="#typography">Typography</a></li>
       </ul>
     </nav>
+    </div>
 
     <!-- The flexible grid (content) -->
     <div class="row">
       <aside class="side">
         <h2>Henry Diaz</h2>
-        <h5>Photo of me:</h5>
+        <h3>Photo of me:</h3>
         <div class="dummyimg me">Image</div>
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3>More Text</h3>
+        <h4>More Text</h4>
         <p>Lorem ipsum dolor sit ame.</p>
       </aside>
       <main class="content">
-        <section id="name" class="item">
-          <article>
-            <h2>SITE NAME</h2>
-            <h3>IndexGen</h3>
-            <p>I would like to create a pege that containg a Genealogical Index. So, I choose <strong>IndexGen</strong> for the website name.</p>
-          </article>
+        <section class="item"> <span id="name"></span>
+          <h2>SITE NAME</h2>
+          <div>
+            <h3>GenIndex</h3>
+            <p>I would like to create a pege that containg a Genealogical Index. So, I choose <strong>GenIndex</strong> for the website name.</p>
+            
+          </div>
         </section>
         <br />
-        <section id="purpose" class="item">
-          <article>
-            <h2>SITE PURPOSE & GOALS</h2>
+        <section class="item"><span id="purpose"></span>
+          <h2>SITE PURPOSE & GOALS</h2>
+          <div>
             <p>
               Would you like to find your ancestors without having to do too
               much digging? Have you been frustrated looking up names on
@@ -71,113 +74,107 @@
               to find ancestors. Others think they would like to find a simple
               way to index, without entering too much information, but still
               find a record.</p>
-            </p>
-          </article>
+          </div>
         </section>
-        <section id="audience" class="item">
-          <article>
-            <h2>TARGET AUDIENCE</h2>
+        <section class="item"><span id="audience"></span>
+          <h2>TARGET AUDIENCE</h2>
+          <div>
             <p>
               The audience is made up of people of both sexes with average ages
               between 18 to 50 years old, as well as family groups.
             </p>
-          </article>
+          </div>
         </section>
-        <section id="content" class="item">
-          <article>
-            <h2>CONTENT</h2>
+        <section class="item"><span id="content"></span>
+          <h2>CONTENT</h2>
+          <div>
             <p>
               I will add a table with information from some general records of Mexico and Venezuela. The table will be styled using bootstrap and an additional Javascript library called bootstrap-table which allows you to filter data by headers, making it easier to look up names. Once a name of interest is located, a direct link to the image or record in FamilySearch will be clickable.
             </p>
-          </article>
+          </div>
         </section>
-        <section id="map" class="item">
-          <article>
-            <h2>SITE MAP</h2>
+        <section class="item"><span id="map"></span>
+          <h2>SITE MAP</h2>
+          <div>
             <p>
-              In addition to the HOME page, I will create two other pages. Both pages will contain a table with a list of names and surnames found on the main page.
+              In addition to the HOME page, I will create two other pages. Both pages will contain a table with a list of names and lastnames found on the main page.
             </p>
             <p>That way, people searching for a surname or given name would be able to see if there is any variant of the one they're looking for and make their search easier.</p>
-          </article>
+          </div>
+          <h3>Wireframe</h3>
+          <iframe
+            width="700"
+            height="480"
+            src="./public/wireframe.pdf"
+            
+          >
+        </iframe>
+        <p>If your browser do not support PDF, please clic <a href="https://wireframepro.mockflow.com/view/M0k5EJl67h#/page/dcd1bfc48411430b9ffa9f1dc99aadf9">here.</a></p>
         </section>
-        <section id="logo" class="item">
-          <article>
-            <h2>LOGO</h2>
-            <div class="dummyimg me"></div>
+        <section class="item"><span id="logo"></span>
+          <h2>LOGO</h2>
+          <div>
+            <div class="logo"></div>
             <p>Some text..</p>
-          </article>
+          </div>
         </section>
-        <section id="colors" class="item">
-          <article>
-            <h2>COLOR SCHEME</h2>
-            <h5>Still undefined</h5>
-            <!-- <div class="additional">
+        <section class="item"><span id="colors"></span>
+          <h2>COLOR SCHEME</h2>
+          <div>
+            <div class="additional">
               <div class="color naranja">#ff9933</div>
               <br />
               <div class="color azul">#3399ff</div>
               <br />
               <div class="color black">#333</div>
               <br />
-            </div> -->
-            <p>Some text..</p>
-          </article>
+            </div>
+
+          </div>
         </section>
-        <section id="typography" class="item">
-          <article>
-            <h2>TYPOGRAPHY</h2>
-            <p>Some text..</p>
+        <section class="item"><span id="typography"></span>
+          <h2>TYPOGRAPHY</h2>
+          <div>
+            <p>I will using Helvetica Neue</p>
+
             <table>
               <tr class="site-header">
                 <td>Site header</td>
-                <td>Undefined</td>
                 <td>40px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
               <tr class="navigation">
                 <td>Primary Navigation</td>
-                <td>Undefined</td>
                 <td>30px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
               <tr class="heading1">
                 <td>Heading 1 (h1)</td>
-                <td>Undefined</td>
                 <td>35px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
               <tr class="heading2">
                 <td>Heading 2 (h2)</td>
-                <td>Undefined</td>
                 <td>30px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
-              <tr class="heading5">
-                <td>Heading (h5)</td>
-                <td>Undefined</td>
+              <tr class="heading3">
+                <td>Heading 3 (h3)</td>
                 <td>25px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
               <tr class="text">
                 <td>Paragraph Text (p)</td>
-                <td>Undefined</td>
                 <td>16px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
               <tr class="footer">
                 <td>Footer Navigation</td>
-                <td>Undefined</td>
                 <td>20px</td>
-                <td>Undefined</td>
                 <td>Sample</td>
               </tr>
             </table>
-          </article>
+          </div>
         </section>
       </main>
     </div>

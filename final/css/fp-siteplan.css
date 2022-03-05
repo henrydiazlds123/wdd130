@@ -138,6 +138,7 @@ footer {
     background-image: url("../images/life/life.jpg");
     background-repeat: no-repeat;
     background-color: white;
+    width: 50px;
 }
 
 .side .me {
