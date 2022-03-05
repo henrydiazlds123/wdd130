@@ -1,5 +1,4 @@
 :root {
-    --naranja: #ff9933;
     --rojo: #ff3333;
     --verde: #33ff99;
     --azul: #3399ff;
@@ -31,7 +30,7 @@ h1 {
 
 h2 {
     font-size: 1.875em;
-    color: var(--naranja);
+    color: var(--black);
 }
 
 p {
@@ -119,6 +118,9 @@ footer {
     text-align: center;
     background: var(--black);
 }
+footer h2 {
+    color: white;
+}
 .header {
     position: fixed;
     top: 0;
@@ -136,9 +138,6 @@ footer {
     /* flex-wrap: wrap; */
 }
 
-.naranja {
-    background: var(--naranja);
-}
 
 .rojo {
     background: var(--rojo);
@@ -146,6 +145,7 @@ footer {
 
 .verde {
     background: var(--verde);
+    color: white;
 }
 
 .azul {
@@ -217,7 +217,7 @@ footer {
 }
 
 .heading1 td:nth-child(n+3), .heading1 td:nth-child(n+3), .heading2 td:nth-child(n+3), .heading5 td:nth-child(n+3), .footer td:nth-child(n+3) {
-    color: var(--naranja);
+    color: var(--black);
 }
 
 .text td:nth-child(n+3) {
