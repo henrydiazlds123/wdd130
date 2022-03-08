@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W11 - Not my very first Forms</title>
+
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+  <p>This is my page</p>
+  <form onsubmit="clicked()">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="John Doe requiered" required>
+      </li>
+      <li>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email" placeholder="johndoe@email.com requiered" required>
+      </li>
+      <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </li>
+      <li class="button">
+        <button type="submit" >Send your message</button>
+      </li>
+    </ul>
+  </form>
+  <script>
+    function clicked() {
+      var nn = document.getElementById('name').value;
+      var ee = document.getElementById('mail').value;
+      if (nn != null && ee != null) {
+        console.log(ee);
+        alert ("Thank you, " + nn)
+      }      
+    }
+  </script>
+</body>
+</html>
