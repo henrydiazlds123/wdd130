@@ -23,7 +23,7 @@
       </li>
       <li>
         <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
+        <textarea id="msg" name="user_message" required></textarea>
       </li>
       <li class="button">
         <button type="submit">Send your message</button>
@@ -34,7 +34,8 @@
     function clicked() {
       var nn = document.getElementById('name').value;
       var ee = document.getElementById('mail').value;
-      if (nn != null && ee != null) {
+      var mm = document.getElementById('msg').value;
+      if (nn != null && ee != null && mm != null) {
         alert ("Thank you, " + nn)
       }      
     }
