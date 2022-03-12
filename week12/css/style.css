@@ -69,16 +69,14 @@ div.like {
   height: 50px;
   right: 1.3rem;
   top: 1.3rem;
-  transition: .3s;
+  transition: .5s;
 }
 div.like:hover {
-  width: 60px;
-  height: 60px;
+  transform: scale(1.2);
   background-color: red;
 }
 
 div.like:hover div.heart {
-  font-size: 3.5rem;
   color:white;
 }
 
