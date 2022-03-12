@@ -1,3 +1,12 @@
+body {
+  /* background: linear-gradient(to right, #8e9eab, #eef2f3); */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   /* Center the form on the page */
   margin: 0 auto;
@@ -8,15 +17,6 @@ form {
   border-radius: 1em;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
 
 label {
   /* Uniform size & alignment */
@@ -66,15 +66,11 @@ button[type=submit]:hover {
   color: white;
 }
 
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
 
 button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
-  margin-left: .5em;
+  margin-left: 93px;
 }
 textarea:focus,
 input[type="text"]:focus,

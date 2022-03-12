@@ -10,25 +10,18 @@
   <link rel="stylesheet" href="../css/form.css">
 </head>
 <body>
-  <p>This is my page</p>
+  <h1>My styled HTML Form</h1>
   <form onsubmit="clicked()">
-    <ul>
-      <li>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name" placeholder="John Doe requiered" required>
-      </li>
-      <li>
+
         <label for="mail">E-mail:</label>
         <input type="email" id="mail" name="user_email" placeholder="johndoe@email.com requiered" required>
-      </li>
-      <li>
+
         <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message" required></textarea>
-      </li>
-      <li class="button">
+        <textarea id="msg" name="user_message" placeholder="message requiered"required></textarea>
+
         <button type="submit">Send your message</button>
-      </li>
-    </ul>
   </form>
   <script>
     function clicked() {
