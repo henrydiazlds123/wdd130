@@ -77,6 +77,7 @@ div.like {
 div.like:hover {
   transform: scale(1.2);
   background-color: red;
+  box-shadow: 0 0 16px 0 white;
 }
 
 div.like:hover .line {
@@ -84,9 +85,6 @@ div.like:hover .line {
 }
 div.like:hover .heart2 {
   color: white;
-}
-div.like:hover {
-  border: 1px solid white;
 }
 
 

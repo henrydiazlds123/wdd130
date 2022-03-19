@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <script src="./js/tablerow.js"></script>
+
+    <title>Genealogical Index</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- nav.navbar>.nav-container>.logo+ul.nav-links>input:c#checkbox_toggle+label.hamburger+.menu>li*3> -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- LOGO -->
+                <div class="logo">GI</div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Firstname List</a></li>
+                        <li><a href="/">Lastname List</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <div class="container">
+            <h1>Indice Genealogical</h1>
+
+            <p>A table with third party integration extension Filter control extension Data export</a> pour exporter</p>
+
+            <div class="row">
+                <div class="col-8">
+                    <table id="table" data-toggle="table" data-search="true" data-filter-control="true"
+                        data-toolbar="#toolbar" class="table-responsive table-condensed">
+                        <thead>
+                            <tr>
+                                <th data-field="prenom" data-filter-control="input" data-sortable="true">First Name</th>
+                                <th data-field="lasnom" data-filter-control="input" data-sortable="true">Last Name</th>
+                                <th data-field="event" data-filter-control="select" data-sortable="true">Event</th>
+                                <th data-field="year" data-filter-control="select" data-sortable="true">Year</th>
+                                <th data-field="country" data-filter-control="select" data-sortable="true">Country</th>
+                                <th data-field="state" data-filter-control="select" data-sortable="true">State</th>
+                                <th data-field="city" data-filter-control="select" data-sortable="true">City</th>
+                                <th data-field="link" data-formatter="LinkFormatter">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <script>
+                                var keys = [];
+                                document.write("</tr>");
+                                for (var i = 0; i < data.length; i++) {
+                                    document.write("<tr>");
+                                    for (key in data[i]) {
+                                        document.write("<td>" + data[i][key] + "</td>");
+                                    }
+                                    document.write("</tr>");
+                                }
+                            </script>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-4">
+                    ASIDE
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="./js/bootstrap-table.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js"></script>
+        <script src="./js/script.js"></script>
+        <!-- <script src="./js/tablerow.js"></script> -->
+</body>
+
+</html>
+
+nav.navbar>.nav-container>.logo+ul.nav-links>input:c#checkbox_toggle+label.hamburger+.menu>li*3>
