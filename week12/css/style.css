@@ -82,6 +82,13 @@ div.like:hover {
 div.like:hover .line {
   fill: white;
 }
+div.like:hover .heart2 {
+  color: white;
+}
+div.like:hover {
+  border: 1px solid white;
+}
+
 
 div.heart {
   position: relative;
@@ -89,7 +96,17 @@ div.heart {
   font-size: 3rem;
   text-align: center;
   transition: .5s;
-  left: -7px
+  left: -8px;
+  
+}
+div.heart2 {
+  position: relative;
+  color: red;
+  font-size: 3rem;
+  text-align: center;
+  transition: .5s;
+  top:-9px;
+  /* left: -7px */
 }
 
 .line {
