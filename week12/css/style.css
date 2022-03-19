@@ -79,17 +79,28 @@ div.like:hover {
   background-color: red;
 }
 
-div.like:hover div.heart {
-  color:white;
+div.like:hover .line {
+  stroke:#b10e0e;
+  fill: white;
 }
 
 div.heart {
   position: relative;
   color: red;
   font-size: 3rem;
-  top: -8px;
   text-align: center;
   transition: .5s;
+  left: -7px
+}
+
+.line {
+    fill: rgb(238, 124, 124);
+    stroke-width: 10;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke: red;
+    stroke-dasharray: 328 600;
+    animation: rotate 2s infinite linear;  
 }
 /*------------------------------------*\
     $FOOTER
@@ -147,6 +158,7 @@ div.carousel img{
     width:100%;
     max-width:100%;
 }
+
 
 @-moz-keyframes carousel{
     0%    { left:0; }
@@ -206,4 +218,14 @@ div.carousel img{
     87.5% { left:-100%; }
     98.5% { left:-100%; }
     100%  { left:0; }
+}
+
+
+@keyframes rotate {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 928;
+  }
 }
