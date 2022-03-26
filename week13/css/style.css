@@ -65,7 +65,7 @@ html {
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
 address {
@@ -114,7 +114,7 @@ table {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  /* text-align: -webkit-match-parent; */
 }
 
 thead,
@@ -157,74 +157,17 @@ select:disabled {
   opacity: 1;
 }
 
-[list]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-button,
-[type=button],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=submit]:not(:disabled) {
   cursor: pointer;
 }
 
-::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
-::-webkit-datetime-edit-fields-wrapper,
-::-webkit-datetime-edit-text,
-::-webkit-datetime-edit-minute,
-::-webkit-datetime-edit-hour-field,
-::-webkit-datetime-edit-day-field,
-::-webkit-datetime-edit-month-field,
-::-webkit-datetime-edit-year-field {
-  padding: 0;
-}
-
-::-webkit-inner-spin-button {
-  height: auto;
-}
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
-}
-
-::file-selector-button {
-  font: inherit;
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
 
 nav ul {
   list-style-type: none;
@@ -522,41 +465,6 @@ p {
   margin-bottom: 1em;
 }
 
- /* .h1 {
-  font-size: 5.2917em;
-  word-break: break-word;
-  margin: 3.8rem 0 3.8rem 0;
-  line-height: 5.2917rem;
-}
-
-.title, .h2 {
-  font-size: 2.64em;
-  font-weight: lighter;
-  word-break: break-word;
-  margin: 3.8rem 0 0.95rem 0;
-  line-height: 1em;
-}
-
- .h3 {
-  font-size: 1.75em;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 3.8rem 0 0.95rem 0;
-  line-height: 1em;
-}
-
- .h4 {
-  font-size: 1.3333em;
-  text-transform: capitalize;
-  margin: 2.85rem 0 0.95rem 0;
-  line-height: 1.9rem;
-}
-
- .h4 {
-  margin: 2.85rem 0 0.95rem 0;
-  line-height: 1.9rem;
-} */
 
 /*------------------------------------*\
   #E-FOOTER
@@ -915,6 +823,140 @@ select option {
 main#search .container {
   min-height: 100vh;
 }
+#myBtnContainer {
+  margin-top: 410px;
+}
+@media (min-width: 1024px) {
+  #myBtnContainer {
+    margin-top: 200px;
+  }
+}
+
+.myColumns {
+  -webkit-column-gap: 10px !important;
+  -moz-column-gap: 10px !important;
+  column-gap: 10px !important;
+}
+#turn {
+  padding: 10px 30px 30px;
+}
+.container-letters {
+  padding-bottom: 15px;
+  min-height: 25vh;
+}
+.filterDiv {
+  color: #000000;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnn {
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Add a light grey background on mouse-over */
+.btnn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btnn.activa {
+  background-color: #666;
+  color: white;
+}
+.container-letters {
+  overflow: hidden;
+}
+#myBtnContainer ul {
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+#myBtnContainer ul, .container-letters ul {
+  padding-inline-start: 10px;
+  font-family: "Georgia", serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .myColumns {
+    -webkit-column-count: 4 !important;
+    -moz-column-count: 4 !important;
+    column-count: 4 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .myColumns {
+    -webkit-column-count: 5 !important;
+    -moz-column-count: 5 !important;
+    column-count: 5 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .myColumns {
+    -webkit-column-count: 6 !important;
+    -moz-column-count: 6 !important;
+    column-count: 6 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .myColumns {
+    -webkit-column-gap: 10px !important;
+    -moz-column-gap: 10px !important;
+    column-gap: 10px !important;
+    -webkit-column-count: 8 !important;
+    -moz-column-count: 8 !important;
+    column-count: 8 !important;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
+    -webkit-column-rule: 1px solid #666;
+    -moz-column-rule: 1px solid #666;
+    column-rule: 1px solid #666;
+  }
+}
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation: landscape) {
+  #turn {
+    display: none;
+  }
+  .container-fluid {
+    display: block;
+  }
+}
+
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation: portrait) {
+  .container-fluid {
+    display: none;
+  }
+  #turn {
+    display: block;
+  }
+}
+
 
 
  /* ============ Table ============ */
@@ -939,7 +981,7 @@ th {
     width: 100%;
     margin-bottom: 15px;
     overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
     border: 1px solid #ddd;
   }
 }

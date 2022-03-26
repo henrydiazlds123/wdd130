@@ -114,6 +114,64 @@
           </table>
         </div>
       </div>
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <h2>Lastnames List</h2>
+        <p>Use this list to see which surnames, and their possible variations, are in our table.</p>
+        <ul id="iniciales" class="d-flex">
+          <li class="btnn activa" onclick="filterSelection('all')"> Todos</li>
+          <li class="btnn" onclick="filterSelection('aa')"> A</li>
+          <li class="btnn" onclick="filterSelection('bb')"> B</li>
+          <li class="btnn" onclick="filterSelection('cc')"> C</li>
+          <li class="btnn" onclick="filterSelection('dd')"> D</li>
+          <li class="btnn" onclick="filterSelection('ee')"> E</li>
+          <li class="btnn" onclick="filterSelection('ff')"> F</li>
+          <li class="btnn" onclick="filterSelection('gg')"> G</li>
+          <li class="btnn" onclick="filterSelection('hh')"> H</li>
+          <li class="btnn" onclick="filterSelection('ii')"> I</li>
+          <li class="btnn" onclick="filterSelection('jj')"> J</li>
+          <li class="btnn" onclick="filterSelection('kk')"> K</li>
+          <li class="btnn" onclick="filterSelection('ll')"> L</li>
+          <li class="btnn" onclick="filterSelection('mm')"> M</li>
+          <li class="btnn" onclick="filterSelection('nn')"> N</li>
+          <li class="btnn" onclick="filterSelection('ññ')"> Ñ</li>
+          <li class="btnn" onclick="filterSelection('oo')"> O</li>
+          <li class="btnn" onclick="filterSelection('pp')"> P</li>
+          <li class="btnn" onclick="filterSelection('qq')"> Q</li>
+          <li class="btnn" onclick="filterSelection('rr')"> R</li>
+          <li class="btnn" onclick="filterSelection('ss')"> S</li>
+          <li class="btnn" onclick="filterSelection('tt')"> T</li>
+          <li class="btnn" onclick="filterSelection('uu')"> U</li>
+          <li class="btnn" onclick="filterSelection('vv')"> V</li>
+          <li class="btnn" onclick="filterSelection('ww')"> W</li>
+          <li class="btnn" onclick="filterSelection('xx')"> X</li>
+          <li class="btnn" onclick="filterSelection('yy')"> Y</li>
+          <li class="btnn" onclick="filterSelection('zz')"> Z</li>
+        </ul>
+      </div>
+      <div class="container-letters myColumns">
+        <!-- <ul id="listado"></ul> -->
+        <ul id="listado">
+          <li class="filterDiv aa"> Acosta</li>
+            <li class="filterDiv bb"> Bermudez</li>
+            <li class="filterDiv bb"> Brito</li>
+            <li class="filterDiv cc"> Campo</li>
+            <li class="filterDiv cc"> Cedeño</li>
+            <li class="filterDiv ff"> Fermin</li>
+            <li class="filterDiv gg"> Garcia</li>
+            <li class="filterDiv gg"> Gonzalez</li>
+            <li class="filterDiv gg"> Guevara</li>
+            <li class="filterDiv hh"> Hernandez</li>
+            <li class="filterDiv jj"> Jimenez</li>
+            <li class="filterDiv ll"> Leon</li>
+            <li class="filterDiv ll"> Luna</li>
+            <li class="filterDiv mm"> Moya</li>
+            <li class="filterDiv rr"> Ramirez</li>
+            <li class="filterDiv ss"> Salas</li>
+            <li class="filterDiv ss"> Sifontes</li>
+            <li class="filterDiv vv"> Valerio</li>
+        </ul>
+      </div>
     </div>
   </main>
   <footer class="footer sticky bg-dark">
@@ -135,7 +193,7 @@
   <script src="./js/bootstrap-table.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js"></script>
-  <!-- <script src="./js/tablerow.js"></script> -->
+  <script src="./js/list.js"></script>
 </body>
 
 </html>
