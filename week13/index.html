@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This document is the final assignment for WDD 130 at BYU-Idaho." />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/tablerow.js"></script>
+    
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="landing">
+    <nav class="navbar sticky navbar-dark">
+          <div class="container nav-container">
+            <!-- LOGO -->
+            <div class="logo text-light">GI</div>
+            <!-- NAVIGATION MENU -->
+            <div class="nav-links">
+              <!-- USING CHECKBOX HACK -->
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+              <!-- NAVIGATION MENUS -->
+              <ul class="menu">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="search.html">Search Table</a></li>
+                <li><a href="status.html">Status</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <header>
+
+    <div id="hero-landing" class="hero px-2">
+      <div class="container pt-5">
+        <h1 class="mb-0 font-bold">Setting Presedents</h1>
+        <p class="mb-0 mt-0 text-light o-60"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, provident! </p>
+      </div>
+    </div>
+    </header>
+
+    <main class="main mt-5 px-2">
+      <div class="container">
+        <div class="row gap-2 fjc-center">
+          <div class="fcol-sm-12 fcol-md-6 fcol-lg-6 card">
+            <img src="./img/f1.jpg" alt="family" class="card-img">
+            <div class="card-body px-3 pb-3">
+              <h3 class="card-title">Building Connections</h3>
+              <p class="card-text o-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quidem deserunt repellat alias accusantium fugit!</p>
+              <a href="search.html" class="card-link">Search on table</a>
+            </div>
+          </div>
+          <div class="fcol-sm-12 fcol-md-6 fcol-lg-6 card">
+            <img src="./img/buscar.jpg" alt="buscar" class="card-img">
+            <div class="card-body px-3 pb-3">
+              <h3 class="card-title">Social Media</h3>
+              <p class="card-text o-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam itaque? Porro nesciunt ad accusamus.</p>
+              <a href="#" class="card-link">Follow us!</a>
+            </div>
+          </div>
+          <div class="fcol-sm-12 fcol-md-6 fcol-lg-6 card">
+            <img src="./img/tree.jpg" alt="Tree" class="card-img">
+            <div class="card-body px-3 pb-3">
+              <h3 class="card-title">Work Progress</h3>
+              <p class="card-text o-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam itaque? Porro nesciunt ad accusamus.</p>
+              <a href="status.html" class="card-link">Look how we are doing!</a>
+            </div>
+          </div>
+        </div>
+        <form class="container d-grid-12 mt-5 gap-2 as-start px-1">
+          <div class="col-lg-4 col-xs-12 col-md-12 pt-0">
+            <h5 class="pt-0">Join our mailing list:</h5>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 col-md-12">
+            <label for="exampleInputEmail1" >Email address</label>
+            <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 100%" class="mb-1">
+            <div id="emailHelp" class="o-50 font-sm">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="col-lg-2 col-xs-12 col-md-12 mb-3">
+            <button type="submit" class="btn btn-primary-outlined mt-3" style="width: 100%;">Join Us!</button>
+          </div>
+
+        </form>
+      </div>      
+    </main>
+  </body>
+</html>

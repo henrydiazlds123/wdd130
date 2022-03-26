@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This document is the final assignment for WDD 130 at BYU-Idaho." />
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script src="./js/tablerow.js"></script>
+  
+  <title>Genealogical Index</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body id="">
+  <!-- navbar -->
+  <nav class="navbar sticky navbar-dark">
+    <div class="container nav-container">
+      <!-- LOGO -->
+      <div class="logo text-light">GI</div>
+      <!-- NAVIGATION MENU -->
+      <div class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <ul class="menu">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class="current"><a href="#">Search Table</a></li>
+          <li class=""><a href="status.html">Status</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    
+    <div id="hero-search" class="hero pl-2 pr-2">
+      <div class="container pt-5">
+        <h1 class="mb-0 font-bold">Building Connections</h1>
+        <p class="mb-0 mt-0 text-light o-60"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+          provident! </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- intro -->
+  <main id="search" class="mb-1">
+    <div class="container p-2">
+      <h1 class="mb-2">Genealogical Index</h1>
+
+      <div class="intro columns-3 gap-4 column-separator text-justify">
+        <p class="bleeding-4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam incidunt
+          perspiciatis doloribus neque eius asperiores, minus id laborum libero
+          ratione quis quibusdam sapiente est dolorum. Ducimus expedita a alias
+          officiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          iste incidunt ipsum rerum odit optio cumque. Provident repellat
+          similique possimus eos voluptate consequatur! Cumque dolores eaque
+          labore magni harum quae, hic commodi eveniet molestiae sequi vel, aut
+          ipsam assumenda natus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+          quibusdam!
+        </p>
+        <p>
+          L'uomo la della noi uomini sia allo. Niuna procuratori di noia degli e
+          segreto cospetto quale, temporali da suoi a noi che niuno. Quali nome
+          e in dell'occhio purita non raccontare, porgiamo sé seguendo novella
+          fuor alcun dinanzi i, tutte se maravigliose pietosa e di.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="table">
+          <table id="table" data-toggle="table" data-search="true" data-filter-control="true" data-toolbar="#toolbar"
+            class="table-responsive table-condensed">
+            <thead>
+              <tr>
+                <th data-field="prenom" data-filter-control="input" data-sortable="true">First Name</th>
+                <th data-field="lasnom" data-filter-control="input" data-sortable="true">Last Name</th>
+                <th data-field="event" data-filter-control="select" data-sortable="true">Event</th>
+                <th data-field="year" data-filter-control="select" data-sortable="true">Year</th>
+                <th data-field="country" data-filter-control="select" data-sortable="true">Country</th>
+                <th data-field="state" data-filter-control="select" data-sortable="true">State</th>
+                <th data-field="city" data-filter-control="select" data-sortable="true"> City</th>
+                <th data-field="link" data-formatter="LinkFormatter">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <script>
+                var keys = [];
+                document.write("</tr>");
+                for (var i = 0; i < data.length; i++) {
+                  document.write("<tr>");
+                  for (key in data[i]) {
+                    document.write("<td>" + data[i][key] + "</td>");
+                  }
+                  document.write("</tr>");
+                }
+              </script>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </main>
+  <footer class="footer sticky bg-dark">
+    <div class="container p-1 d-flex jc-sb ac-center">
+      <div class="text-center p-3 text-light">
+        © 2020 - 2022
+        <a class="text-light" href="#">  Genealogical Index</a>
+      </div>
+      <div class="social d-flex ac-center">
+        <a href="https://www.facebook.com/IndiceGenealogico/" target="_blank"><img src="./img/social/facebook.png"
+            alt="facebook-icon"></a>
+        <a href="mailto:indicegenealogico@gmail.com"><img src="./img/social/gmail.png" alt="gmail-icon"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./js/bootstrap-table.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/extensions/filter-control/bootstrap-table-filter-control.js"></script>
+  <!-- <script src="./js/tablerow.js"></script> -->
+</body>
+
+</html>
