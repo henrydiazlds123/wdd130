@@ -80,28 +80,21 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
-  color: #0a58ca;
-}
+a:hover {color: #0a58ca}
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
 
-img {
-  vertical-align: middle;
-}
+img {vertical-align: middle}
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
+  border-collapse: collapse
 }
 
-th {
-  text-align: inherit;
-  /* text-align: -webkit-match-parent; */
-}
+th {text-align: inherit}
 
 thead,
 tbody,
@@ -110,16 +103,11 @@ td,
 th {
   border-color: inherit;
   border-style: solid;
-  border-width: 0;
+  border-width: 0
 }
 
-label {
-  display: inline-block;
-}
-
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
+label {display: inline-block}
+button:focus:not(:focus-visible) {outline: 0}
 
 input,
 button,
@@ -127,37 +115,20 @@ select {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
+  line-height: inherit
 }
 
-button,
-select {
-  text-transform: none;
-}
-
-select {
-  word-wrap: normal;
-}
-
-select:disabled {
-  opacity: 1;
-}
-
+button, select {text-transform: none}
+select {word-wrap: normal}
+select:disabled {opacity: 1}
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=submit]:not(:disabled) {
-  cursor: pointer;
+  cursor: pointer
 }
 
-
-[type=search] {
-  outline-offset: -2px;
-}
-
-
-nav ul {
-  list-style-type: none;
-}
+[type=search] {outline-offset: -2px}
+nav ul {list-style-type: none}
 
 /*------------------------------------*\
   #B-LAYOUT
@@ -167,13 +138,13 @@ nav ul {
   width: 100%;
   max-width: 1536px;
   margin: 0 auto;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .row {
   display: flex;
   flex-flow: row wrap;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .gap-2{gap:20px}
@@ -183,13 +154,13 @@ nav ul {
 .as-start{align-self:start}
 .d-grid-12 {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr)
 }
 
 .d-flex {
   display: flex;
   flex-flow: row wrap;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 @media (min-width: 480px) {
@@ -197,30 +168,19 @@ nav ul {
   .container{max-width:480px}
 }
 @media (min-width: 640px) {
-
   .fcol-sm-12 {
     flex-grow: 0;
-    width: 100%;
+    width: 100%
   }
-
-  .container {
-    max-width: 640px;
-  }
+  .container {max-width: 640px}
 }
 @media (min-width: 768px) {
-
   .fcol-md-6 {
     flex-grow: 0;
-    width: 50%;
+    width: 50%
   }
-
-  .col-md-12 {
-    grid-column: span 12;
-  }
-
-  .container {
-    max-width: 768px;
-  }
+  .col-md-12 {grid-column: span 12}
+  .container {max-width: 768px}
 }
 @media (min-width: 1024px) {
   .container{max-width:1024px}
@@ -230,7 +190,7 @@ nav ul {
 
   .fcol-lg-6 {
     flex-grow: 0;
-    width: 50%;
+    width: 50%
   }
 
 }
@@ -258,16 +218,12 @@ nav ul {
   padding-left: 0.75rem !important;
   padding-right: 0.75rem !important;
 }
-
 .p-1 {padding: 0.75rem !important}
-
 .px-2 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
 }
-
 .p-2 {padding: 1.5rem !important}
-
 .px-3 {
   padding-left: 2.25rem !important;
   padding-right: 2.25rem !important;
@@ -324,7 +280,7 @@ p {
   font-size: 1em;
   line-height: 1.63em;
   padding-top: 0.63em;
-  margin-bottom: 1em;
+  margin-bottom: 1em
 }
 
 
@@ -336,13 +292,13 @@ p {
   min-height: 100px;
   width: 100%;
   bottom: 0;
-  left: 0;
+  left: 0
 }
 .footer.sticky {position: sticky}
 .social img {
   width: 50px;
   height: 50px;
-  padding: 5px;
+  padding: 5px
 }
 
 /*------------------------------------*\
@@ -356,7 +312,7 @@ p {
   border-radius: 8px;
   display: inline-block;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none
 }
 .btn:hover {
   background-color: #efefef;
@@ -366,11 +322,11 @@ p {
 .btn-primary-outlined {
   background-color: transparent;
   color: #1877f2;
-  border: 0.25px solid #1877f2;
+  border: 0.25px solid #1877f2
 }
 .btn-primary-outlined:hover {
   background-color: #1877f2;
-  color: white;
+  color: white
 }
 
 /*------------------------------------*\
@@ -382,7 +338,7 @@ p {
   border-radius: 32px;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1)
 }
 
 .card-img {
@@ -395,7 +351,7 @@ p {
 .card-title {
   margin-top: 0.25rem;
   margin-left: 0;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.55rem
 }
 
 .card-text {margin-bottom: 1rem}
@@ -407,7 +363,7 @@ p {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  background-color: #1877f2;
+  background-color: #1877f2
 }
 
 /*------------------------------------*\
@@ -417,7 +373,7 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 /* NAVBAR STYLING STARTS */
@@ -432,7 +388,7 @@ p {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #fff
 }
 
 /* LOGO */
@@ -442,23 +398,21 @@ p {
 .nav-links > .menu {
   display: flex;
   gap: 1em;
-  font-size: 18px;
+  font-size: 18px
 }
 .nav-links > .menu li {
   padding: 12px 14px;
-  list-style: none;
+  list-style: none
 }
 .nav-links > .menu li:hover {
   background-color: #495057;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.3s ease
 }
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
-.nav-links > input[type=checkbox] {
-  display: none;
-}
+.nav-links > input[type=checkbox] {display: none}
 
 /*HAMBURGER MENU*/
 .nav-links > label.hamburger {
