@@ -315,13 +315,13 @@ p {
   text-decoration: none
 }
 .btn:hover {
-  background-color: #efefef;
-  color: black;
+  background-color: #1877f2;
+  color: #efefef;
 }
 
 .btn-primary-outlined {
   background-color: transparent;
-  color: #1877f2;
+  color: white;
   border: 0.25px solid #1877f2
 }
 .btn-primary-outlined:hover {
@@ -359,11 +359,11 @@ p {
 .card-link {
   padding: 12px 30px;
   border-radius: 8px;
-  color: white;
+  color: black;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  background-color: #1877f2
+  background-color: white
 }
 
 /*------------------------------------*\
